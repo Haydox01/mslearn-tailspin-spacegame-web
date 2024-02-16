@@ -12,14 +12,6 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps:
-- task: UseDotNet@2
-  displayName: 'Use .NET SDK 8.0'
-  inputs:
-    packageType: sdk
-    version: '8.x'
-
-
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
